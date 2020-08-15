@@ -1,14 +1,14 @@
 
 // Definindo variáveis gobais ------------------------------------------------------------
 // Variáveis de configuração (Pode mexer)
-//const symbol_ = 'frxEURCAD';        // Ativo
-const symbol_ = 'frxEURJPY';             // Ativo
-const data_size = 100;             // Quantidade de dados
-const window_size = 14;             // Tamanho da média móvel
+//const symbol_ = 'frxEURCAD';      // Ativo
+const symbol_ = 'frxEURJPY';        // Ativo
+const data_size = 1500;             // Quantidade de dados
+const window_size = 12;             // Tamanho da média móvel
 const n_layers = 8;                 // Número de camadas ocultas
-const n_epochs = 200;               // Número de épocas de treinamento
-const learning_rate = 0.02;         // Taxa de aprendizado
-const training_size = 85;           // Tamanho da parcela de treino em %
+const n_epochs = 300;               // Número de épocas de treinamento
+const learning_rate = 0.01;         // Taxa de aprendizado
+const training_size = 90;           // Tamanho da parcela de treino em %
 
 // Plota definicoes
 console.log('------------- LIBERTY AI -------------');
