@@ -2,11 +2,11 @@
 // Definindo variáveis gobais ------------------------------------------------------------
 // Variáveis de configuração (Pode mexer)
 //const symbol_ = 'frxEURCAD';        // Ativo
-const symbol_ = 'frxEURCAD';             // Ativo
-const data_size = 600;              // Quantidade de dados
-const window_size = 20;             // Tamanho da média móvel
-const n_layers = 4;                 // Número de camadas ocultas
-const n_epochs = 4;                // Número de épocas de treinamento
+const symbol_ = 'frxEURJPY';             // Ativo
+const data_size = 100;             // Quantidade de dados
+const window_size = 14;             // Tamanho da média móvel
+const n_layers = 8;                 // Número de camadas ocultas
+const n_epochs = 200;               // Número de épocas de treinamento
 const learning_rate = 0.02;         // Taxa de aprendizado
 const training_size = 85;           // Tamanho da parcela de treino em %
 
@@ -364,7 +364,7 @@ async function main(X, Y, epochs, real, sma){
   await validate(X, Y, epochs, result.model, real, sma, result.max, result.min);
 
   // Salva modelo
-  await result.model.save('downloads://my-model');
+  await result.model.save('downloads://Liberty-Brain');
 
 }
 
