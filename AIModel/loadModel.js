@@ -266,7 +266,7 @@ async function makePredictions(X, model, max, min)
 async function main(X, Y, epochs, real, sma){
 
   // Chama função que cria e treina o modelo
-  const model = await tf.loadLayersModel('http://yurialmeida.com/my-model.json');;
+  const model = await tf.loadLayersModel('http://yurialmeida.com/AIModel/my-model.json');
   console.log('Modelo treinado com sucesso');
 
   // Chama função de validação do modelo
